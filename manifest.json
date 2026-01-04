@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Miniblox Custom Skin",
+  "version": "1.0",
+  "description": "Client-side custom skin",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://miniblox.io/*",
+        "https://miniblox.online/*",
+        "https://www.crazygames.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
+}
